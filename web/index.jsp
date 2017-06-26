@@ -19,7 +19,12 @@
                 java.util.Date date = new java.util.Date();
                 //generate HTML output
                 out.println(date.toString());
-                %>
+            %>
+        </p>
+        <p>
+            <%
+                out.println("Your IP Address is" + request.getRemoteHost());
+            %>
         </p>
     </body>
 </html>
